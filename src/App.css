@@ -1,0 +1,34 @@
+.App {
+  display: flex;
+  justify-content: center;
+}
+
+#display {
+  text-align: center;
+  color: #fff;
+}
+
+.drum-pads {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px 20px;
+}
+
+.drum-pad {
+  border: 2px solid black;
+  width: 100px;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  box-shadow: 3px 3px 3px black;
+  border-radius: 5px;
+  background-color: gray;
+  color: #fff;
+}
+
+.drum-pad:active {
+  transform: translate(3px, 3px);
+  box-shadow: none;
+}
